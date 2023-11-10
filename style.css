@@ -96,7 +96,9 @@
         left: -6px;
         z-index: 2;
     }
-    
+    h1{
+       display: none;
+    }
     .main-togle .ham{
         display: block;
         background-color: white;

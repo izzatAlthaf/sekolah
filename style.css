@@ -161,11 +161,11 @@
 
 }
 
-   nav, main{
+   body nav, body main{
       display: none;
    }
 
-   .kos{
+   body .kos{
       display: flex;
       align-items: center;
       justify-content: center;

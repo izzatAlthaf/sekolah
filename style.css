@@ -161,12 +161,12 @@
 
 }
 
-nav, main{
-   display: none;
-}
+   nav, main{
+      display: none;
+   }
 
-.kos{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
+   .kos{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }

@@ -6,7 +6,7 @@
     
     body{
         font-family: arial;
-        font-size: clamp(1.125rem, 2vw, 1.25rem);
+        font-size: clamp(1.124rem, 2vw, 1.25rem);
     }
     
     /* List */

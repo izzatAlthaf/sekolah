@@ -1,3 +1,12 @@
+body nav, body main{
+      display: none;
+   }
+
+   body .kos{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
 @media screen and (max-width: 640px) {
     *{
         padding: 0;
@@ -160,13 +169,3 @@
     }
 
 }
-
-   body nav, body main{
-      display: none;
-   }
-
-   body .kos{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }

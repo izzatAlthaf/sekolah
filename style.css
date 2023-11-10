@@ -96,7 +96,7 @@
         left: -6px;
         z-index: 2;
     }
-    h1{
+    h1.hilang{
        display: none;
     }
     .main-togle .ham{

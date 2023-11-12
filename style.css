@@ -1,12 +1,13 @@
 @media screen and (max-width: 640px) {
     *{
         padding: 0;
-        margin: 1;
+        margin: 0;
     }
     
     body{
         font-family: arial;
         font-size: clamp(1.124rem, 2vw, 1.25rem);
+        overflow-x: hidden;
     }
     
     /* List */
@@ -136,16 +137,15 @@
     }
     
     main .description{
-        overflow: hidden;
         position: relative;
     }
-
-    main .description img{
+    
+    main .page img{
         width: 100%;
         height: 100%;
     }
-
-    .description p{
+    
+    .page p{
         position: relative;
         top: -3.5em;
         color: #fff;
@@ -153,6 +153,27 @@
         font-size: 1.4rem;
         font-weight: 700;
         text-shadow: 2px 5px 2px black;
+    }
+    
+    .desc{
+        position: relative;
+        top: -50px;
+        background-color: rgba(242, 242, 243, 0.8);
+        margin: 5px;
+        padding: 0 1.6em;
+        border-radius: 10px;
+    }
+
+    .desc h4{
+        padding: 5px;
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .desc li{
+        font-size: 16px;
+        padding: 5px;
     }
 
 }

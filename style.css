@@ -147,33 +147,45 @@
     
     .page p{
         position: relative;
-        top: -3.5em;
+        top: -4.5em;
         color: #fff;
-        left: 1em;
-        font-size: 1.4rem;
+        left: .7em;
+        font-size: 1.3rem;
         font-weight: 700;
         text-shadow: 2px 5px 2px black;
+        font-style: italic;
     }
     
-    .desc{
+    .desc, .prog{
         position: relative;
         top: -50px;
         background-color: rgba(242, 242, 243, 0.8);
         margin: 5px;
-        padding: 0 1.6em;
+        padding: .85em 1.6em;
         border-radius: 10px;
     }
 
-    .desc h4{
-        padding: 5px;
-        font-family: sans-serif;
-        font-weight: 700;
-        font-size: 18px;
+    .desc h2{
+        font-size: 1.6em;
     }
 
-    .desc li{
+    .prog h2{
+        font-size: 1.3em;
+    }
+
+    .desc p{
         font-size: 16px;
         padding: 5px;
+    }
+
+    .prog p{
+        font-size: 16px;
+        padding-top: 5px
+    }
+
+    .prog li{
+        font-size: 16px;
+        padding: 4px;
     }
 
 }

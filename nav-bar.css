@@ -1,17 +1,18 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-
-/* Style */
 
 body{
-    font-family: sans-serif;
-    font-size: 18px;
+    font-family: arial;
+    font-size: clamp(1.124rem, 2vw, 1.25rem);
+    overflow-x: hidden;
+    width: 100%;
 }
 
-/* navbar */
-nav {
+/* List */
+nav{
     display: flex;
     height: 50px;
     align-items: center;
@@ -30,7 +31,7 @@ nav .main-togle{
 
 nav h4{
     position: relative;
-    left: 100%;
+    left: 20%;
     color: #fff;
 }
 
@@ -40,9 +41,9 @@ nav ul{
     left: 5px;
     width: 150px;
     top: 55px;
-    transform: translateX(-104%);
+    transform: translateX(-100%);
     list-style: none;
-    background-color: #f0f0f599;
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
     transition: all .6s;
 }
@@ -62,6 +63,7 @@ nav ul li:hover{
     box-shadow: inset 0 0 0 .15em black;
     border-radius: 10px;
     transform: scale(1);
+    background-color: #f0f0f599;
 }
 
 nav ul li a{
@@ -107,18 +109,17 @@ nav li a p{
     transition: all .5s;
 }
 
-/* ham animation */
-
-.main-togle .ham:nth-child(2){
+/* Ham animation */
+.main-togle  .ham:nth-child(2){
     transform-origin: 0 0;
 }
 
-.main-togle .ham:nth-child(4){
+.main-togle  .ham:nth-child(4){
     transform-origin: 0 100%;
 }
 
 .main-togle input:checked ~ .ham:nth-child(2){
-    transform: rotate(45deg) translate(-1px,-1px );
+    transform: rotate(45deg) translate(-1px, -1px);
 }
 
 .main-togle input:checked ~ .ham:nth-child(3){
@@ -129,9 +130,7 @@ nav li a p{
     transform: rotate(-45deg) translate(-1px, 0);
 }
 
-
-/* Responsive Break Point */
-
+/* End */
 
 main{
     margin-top: 50px;
@@ -139,11 +138,63 @@ main{
     z-index: -1;
 }
 
-main .description{
-    width: 27.8em;
-    height: 29em;
-    background-image: url(./Asset/Gambar-1.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 100%;
+main .tentang{
+    height: 200px;
+    margin: 10px;
+    background-color: #f2f2f2;
 }
+
+main .alat{
+    height: 200px;
+    margin: 20px 10px;
+    background-color: #f0f0f599;
+}
+main .refrensi{
+    height: 160px;
+    margin: 20px 10px;
+    background-color: #f0f0f599;
+}
+
+.tentang h2, .alat h2, .refrensi h2{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.tentang p{
+    padding: 10px;
+}
+
+.alat ul, .refrensi ul{
+    padding-left: 30px;
+}
+
+.alat ul li, .refrensi ul li{
+    padding: 4px;
+}
+
+
+/* Kontak */
+main.kon div.dua{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px 10px;
+}
+main section.kon{
+    margin: 10px auto 50px auto;
+    border-radius: 20px 0;
+    width: 200px;
+    height: 175px;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(190deg,#f1f100, #12ff12);
+    box-shadow: 6px 6px 4px #1f1f2f;
+}
+
+main section.kon h3 a{
+    text-decoration: none;
+}
+

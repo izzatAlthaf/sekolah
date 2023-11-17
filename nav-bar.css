@@ -142,20 +142,23 @@ main .tentang{
     height: 200px;
     margin: 10px;
     background-color: #f2f2f2;
+    border-radius: 10px;
 }
 
 main .alat{
     height: 200px;
     margin: 20px 10px;
     background-color: #f0f0f599;
+    border-radius: 0 20px;
 }
 main .refrensi{
     height: 160px;
     margin: 20px 10px;
     background-color: #f0f0f599;
+    border-radius: 20px 0;
 }
 
-.tentang h2, .alat h2, .refrensi h2{
+.alat h2, .refrensi h2{
     padding-top: 10px;
     padding-left: 10px;
 }
@@ -172,6 +175,24 @@ main .refrensi{
     padding: 4px;
 }
 
+/* footer */
+footer{
+    position: absolute;
+    bottom: -90px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    background: hsla(0, 0%, 0%, 0.895);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: white;
+    padding: 10px;
+    font-size: .8em;
+}
 
 /* Kontak */
 main.kon div.dua{

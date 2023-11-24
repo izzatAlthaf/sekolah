@@ -63,7 +63,7 @@ nav ul li:hover{
     box-shadow: inset 0 0 0 .15em black;
     border-radius: 10px;
     transform: scale(1);
-    background-color: #f0f0f599;
+    background-color: #f0f0f598;
 }
 
 nav ul li a{

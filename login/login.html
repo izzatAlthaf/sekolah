@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <div class="ham-nav">
+        <ul>
+            <li><a href="../index.html">
+                <img src="../Asset/home.png" alt="home">
+                <p>Home</p>
+            </a></li>
+            <li><a href="#">
+                <img src="../Asset/information-button.png" alt="info">
+                <p>Tentang</p>
+            </a></li>
+            <li><a href="../contact.html">
+                <img src="../Asset/call.png" alt="telpon"><p>Contact</p>
+            </a></li>
+            <li><a href="#">
+                <img src="../Asset/access-control.png" alt="login"><p>Login</p>
+            </a></li>
+        </ul>
+        </div>
+        
+        <div class="main-togle">
+            <input type="checkbox" />
+            <div class="ham"></div>
+            <div class="ham"></div>
+            <div class="ham"></div>
+        </div>
+        
+        <h4>Ma Manbail Futuh</h4>
+    </nav>
+
+    <main>
+        <form class="kotak login">
+            <h2>Login</h2>
+            
+            <div class="input">
+                <section class="user">
+                    <label for="user">Username/NISN</label>
+                    <input 
+                    type="text" 
+                    name="username" 
+                    id="username"
+                    placeholder="Username/NISN"
+                    required
+                    />
+                </section>
+
+                <section class="password">
+                    <label for="password">Kata Sandi</label>
+                    <input 
+                    type="password" 
+                    name="password" 
+                    id="password"
+                    placeholder="Kata Sandi"
+                    required
+                    />
+                </section>
+
+                <section class="ingat">
+                    <input type="checkbox">
+                    <p>Ingatkan Saya</p>
+                </section>
+
+                <section class="kirim">
+                    <button type="submit"><p>Login</p></button>
+                </section>
+            </div>
+        </form>
+
+    </main>
+
+    <script src="log.js"></script>
+</body>
+</html>

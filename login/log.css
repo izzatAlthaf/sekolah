@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    font-size: clamp(1.124rem, 2vw, 1.25rem);
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* List */
+nav{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-image: url(../Asset/background.jpg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: bottom;
+}
+
+nav .main-togle{
+    position: relative;
+    left: 20px;
+}
+
+nav h4{
+    position: relative;
+    left: 20%;
+    color: #fff;
+}
+
+nav ul{
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    width: 150px;
+    top: 55px;
+    transform: translateX(-100%);
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    transition: all .6s;
+}
+
+nav ul.slide{
+    transform: translateX(0);
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    padding: .6em;
+    transition: all .5s;
+}
+
+nav ul li:hover{
+    box-shadow: inset 0 0 0 .15em black;
+    border-radius: 10px;
+    transform: scale(1);
+    background-color: #f0f0f599;
+}
+
+nav ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #111;
+}
+
+nav li a img{
+    margin-left: 15px;
+}
+
+nav li a p{
+    margin-left: 10px;
+}
+
+/* Hamburger bar */
+.main-togle{
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main-togle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    top: -1px;
+    opacity: 0;
+    left: -6px;
+    z-index: 2;
+}
+
+.main-togle .ham{
+    display: block;
+    background-color: white;
+    width: 29px;
+    height: 3px;
+    border-radius: 3px;
+    transition: all .5s;
+}
+
+/* Ham animation */
+.main-togle  .ham:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.main-togle  .ham:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.main-togle input:checked ~ .ham:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.main-togle input:checked ~ .ham:nth-child(3){
+    transform: scale(0);
+}
+
+.main-togle input:checked ~ .ham:nth-child(4){
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+/* End */
+
+main{
+    margin-top: 50px;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url(../Asset/IMG_20231108_181417.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+form{
+    font-size: 16px;
+    width: 300px;
+    border-radius: 4px;
+    border: 4px solid rgba(241, 241, 243,.5);
+    backdrop-filter: blur(5px);
+}
+
+form h2{
+    text-align: center;
+    font-size: 35px;
+    margin: 20px auto;
+}
+
+.input section{
+    padding: 5px 10px;
+    letter-spacing: .05em;
+}
+
+section label{
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+section input{
+    margin-top: 5px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid rgba(241, 242, 243,.4);
+    padding: 5px 10px;
+    border-radius: 15px;
+    outline: none;
+    background: inherit;
+}
+
+section input::placeholder{
+    color: white;
+}
+
+section.ingat{
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 0;
+    margin-top: 10px;
+}
+
+section input[type="checkbox"]{
+    margin: 0px 5px;
+    width: 20px;
+    height: 20px;
+}
+
+section.kirim{
+    display: flex;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 30px;
+    background-color: #3ecf00;
+    margin: 10px auto;
+    transition: all .4s;
+    border-radius: 20px;
+    border: 3px solid #1b1b1b;
+    font-size: 20px;
+    outline: none;
+    padding: 1em;
+    box-shadow: 0px 5px 1px 1px green;
+}
+
+button p{
+    font-weight: 600;
+    color: #f2f1f4;
+}
+
+button:hover{
+    box-shadow: 0px 4px 1px 1px green;
+}
+
+button:active{
+    transform: translateY(1px);
+    box-shadow: none;
+}

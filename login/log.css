@@ -182,6 +182,7 @@ section input{
     border-radius: 15px;
     outline: none;
     background: inherit;
+    color: #f1f1f2;
 }
 
 section input::placeholder{
